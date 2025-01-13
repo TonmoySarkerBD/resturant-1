@@ -119,11 +119,10 @@
     line-height: 47px;
     letter-spacing: 0%;
     text-align: center;
-    margin: 4+
-    0px 0px;
+    margin: 4+ 0px 0px;
 }
 
-.card-img{
+.card-img {
     margin-bottom: 50px;
 }
 
@@ -172,17 +171,35 @@
 
 /* Flex box layout */
 
-.container{
-    border: 2px solid aqua;
+.container {
+    border: 4px solid aqua;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     flex-direction: row;
+    flex-wrap: wrap;
     height: 250px;
 }
 
-.box{
-    border: 2px dashed tomato;
-    width: 50px ;
+.box {
+    border: 4px dashed tomato;
+    width: 50px;
     height: 50px;
+}
+
+
+/* Grid Layout */
+
+.grid-container {
+    display: grid;
+
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    /* grid-template-columns: repeat(2,200px) 50px 100px; */
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.item {
+    border: 2px solid seagreen;
 }
